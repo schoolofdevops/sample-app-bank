@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CMAD Bank Online</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript" src='bank.js'></script>
+<link rel='stylesheet' href='bank.css'>
+<link>
+</head>
+<body>
+	<h1>CMAD Bank Online</h1>
+	<a href='#' id='openLink'>Open Account</a> |
+	<a href='#' id='viewLink'>View Account</a>
+	<hr />
+	<div id='viewForm'>
+		Your Account Number: <input id='number'>
+		<button id="viewButton">View</button>
+	</div>
+	<div id='openForm'>
+		Open A New Account
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input id='name'></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input id='phoneNumber'></td>
+			</tr>
+			<tr>
+				<td><button id='openButton'>Open Account</button></td>
+			</tr>
+		</table>
+	</div>
+	<div id='openResults'></div>
+	<div id='viewResults'>
+		Account Details
+		<table>
+			<tr>
+				<td>Number</td>
+				<td><span id='acc_number'></span></td>
+			</tr>
+			<tr>
+				<td>Balance</td>
+				<td><span id='acc_balance'></span></td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><span id='acc_name'></span></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input id='acc_phoneNumber'></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
